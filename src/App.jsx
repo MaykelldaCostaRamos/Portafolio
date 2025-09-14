@@ -7,10 +7,10 @@ function App() {
   
 
   return (
-    <div className="p-2 ">
+    <>
       <Header />
       <Hero />
-    </div>
+    </>
   )
 }
 
