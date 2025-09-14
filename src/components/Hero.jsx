@@ -1,18 +1,18 @@
 export default function Hero() {
   return (
-    <>
-      <div className="flex justify-center items-center gap-2 py-9">
-        <img
-          className="size-36 rounded-full"
-          src="/maykellramos.webp"
-          alt="Maykell Ramos"
-        />
-        <h1 className="text-3xl font-bold">Maykell Ramos</h1>
+    <div className="w-full flex flex-col items-center pt-10">
+      
+      <div className="flex items-center gap-2">
+        <img className="w-36 h-36 rounded-full border-4 border-slate-200 shadow-lg" src="/maykellramos.webp" alt="Maykell Ramos" />
       </div>
-        <p className="text-lg mt-2">
-          Full-Stack Junior | Apasionado por JavaScript, React y la creación de
-          experiencias web eficientes y atractivas.
-        </p>
-    </>
+
+      <h1 className="text-4xl font-bold">Maykell Ramos</h1>
+   
+      <p className="text-lg leading-relaxed text-center text-slate-600 mt-2">
+        <strong className="text-xl">Desarrollador de aplicaciones web</strong> Apasionado por JavaScript, React y la creación de
+        experiencias web eficientes y atractivas.
+      </p>
+
+    </div>
   );
 }
