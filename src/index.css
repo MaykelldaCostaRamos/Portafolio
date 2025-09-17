@@ -7,6 +7,33 @@ html, body {
   @apply bg-slate-900/5;
 }
 
+/* navbar ancho */
+.header-container {
+  min-width: 315px; 
+}
+
+@media (min-width: 375px) {
+  .header-container {
+    min-width: 350px;
+    
+  }
+}
+
+@media (min-width: 425px) {
+  .header-container {
+    min-width: 400px;
+    padding-right: 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .header-container {
+    min-width: 500px;
+  }
+}
+
+
+/* SKILSS */
 @keyframes orbit {
   0%   { right: -10%; transform: translateY(-30%) }
   25%  { transform: translateY(-80%); }
