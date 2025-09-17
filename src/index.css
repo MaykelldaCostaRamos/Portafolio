@@ -4,7 +4,7 @@
 
 
 html, body {
-  @apply bg-slate-900/5;
+  @apply bg-slate-300/5;
 }
 
 /* navbar ancho */
