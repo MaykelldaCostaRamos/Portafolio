@@ -1,64 +1,51 @@
 import { motion } from "framer-motion";
 
-import { ReactComponent as HTMLIcon } from "../assets/svg/html5.svg";
-import { ReactComponent as CSSIcon } from "../assets/svg/css3.svg";
-import { ReactComponent as JSIcon } from "../assets/svg/js.svg";
-import { ReactComponent as NodeIcon } from "../assets/svg/node-js.svg";
-import { ReactComponent as REACTIcon } from "../assets/svg/react.svg";
+import HTMLIcon from "../assets/svg/html5.svg?react";
+import CSSIcon from "../assets/svg/css3.svg?react";
+import JSIcon from "../assets/svg/js.svg?react";
+import NodeIcon from "../assets/svg/node-js.svg?react";
+import ReactIcon from "../assets/svg/react.svg?react";
+import TailwindcssIcon from "../assets/svg/tailwindcss.svg?react";
 
 export default function Skills() {
-  const skills = ["HTML", "CSS3", "JavaScript", "React-JS", "NODE.JS"];
+  const skills = ["HTML", "CSS3", "JavaScript", "React-JS", "Node.js", "Tailwindcss"];
+  const skillIcons = { HTML: HTMLIcon, CSS3: CSSIcon, JavaScript: JSIcon, "React-JS": ReactIcon, "Node.js": NodeIcon, Tailwindcss: TailwindcssIcon};
+
   const loopSkills = [...skills, ...skills];
-
-
-  const skillIcons = {
-    HTML: HTMLIcon,
-    CSS3: CSSIcon,
-    JavaScript: JSIcon,
-    "React-JS": REACTIcon,
-    "NODE.JS": NodeIcon 
-  }
-
-
+  
+  
 
   return (
     <section id="skills" className="w-full overflow-hidden">
       <div className="px-6">
         <div className="relative flex items-center w-full mt-4 overflow-hidden">
-          <p className="bg-indigo-600 shadow-sm shadow-indigo-400 text-slate-100 text-lg font-bold p-2 z-10 shrink-0 rounded-lg">
+      
+          
+          <p className="relative bg-black text-white font-black text-xl p-2 z-10 shrink-0 rounded-lg overflow-hidden">
             Stack
+            <span className="absolute top-1/2 left-[30%] w-5 h-5 bg-cyan-500/50 rounded-full blur-sm animate-orbit pointer-events-none" />
+            <span className="absolute top-1/2 right-[-60%] w-5 h-5 bg-indigo-100/50 rounded-full blur-sm animate-orbit pointer-events-none" />
+            <span className="absolute top-1/2 right-[-90%] w-5 h-5 bg-indigo-600/50 rounded-full blur-sm animate-orbit pointer-events-none" />
+
           </p>
 
           
+
+          {/* Ticker Motion */}
           <motion.div
             className="absolute left-0 flex gap-8 whitespace-nowrap will-change-transform"
             animate={{ x: ["0%", "-50%"] }}
-            transition={{
-              repeat: Infinity,
-              duration: 15,
-              ease: "linear",
-            }}
+            transition={{ repeat: Infinity, repeatType: "loop" , duration: 20, ease: "linear" }}
           >
-         {/*    {loopSkills.map((skill, i) => (
-              <span
-                key={i}
-                className="text-black text-lg font-semibold px-4"
-              >
-                {skill}
-              </span>
-            ))}*/}
-
-
             {loopSkills.map((skill, i) => {
-                const Icon = skillIcons[skill]; // obtenemos el SVG correspondiente
-                return (
-                    <span key={i} className="flex items-center gap-2 text-black text-lg font-semibold px-4">
-                    <Icon className="w-6 h-6" /> {/* SVG */}
-                    {skill} {/* Texto */}
-                    </span>
-                );
-                })}
-
+              const Icon = skillIcons[skill];
+              return (
+                <span key={i} className="flex items-center gap-2 text-black text-lg font-semibold px-4">
+                  {Icon && <Icon className="w-6 h-6" />}
+                  {skill}
+                </span>
+              );
+            })}
           </motion.div>
         </div>
       </div>

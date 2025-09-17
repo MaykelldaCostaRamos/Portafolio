@@ -4,8 +4,17 @@
 
 
 html, body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    overflow-x: hidden;
+  @apply bg-slate-900/5;
+}
+
+@keyframes orbit {
+  0%   { right: -10%; transform: translateY(-30%) }
+  25%  { transform: translateY(-80%); }
+  50%  { right: 110%; transform: translateY(-30%); }
+  75%  { transform: translateY(20%); }
+  100% { right: -10%; transform: translateY(-30%) }
+}
+
+.animate-orbit {
+  animation: orbit 7s ease-in-out infinite;
 }
