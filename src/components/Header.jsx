@@ -1,7 +1,7 @@
 export default function Header() {
   return (
     <header id="home">
-     <div className="fixed top-7 left-1/2 transform -translate-x-1/2 z-50
+     <div className="fixed top-1 left-1/2 transform -translate-x-1/2 z-50
                 bg-slate-100/30 rounded-lg shadow-md backdrop-blur-sm
                 flex items-center text-slate-950 px-0 w-auto max-w-full header-container">
 
