@@ -5,7 +5,7 @@ export default function Projects() {
  
 
   return (
-    <section id="projects" className="py-12 px-6 sm:px-8 md:px-12 flex text-slate-950"
+    <section id="project" className="py-12 px-6 sm:px-8 md:px-12 flex text-slate-950"
     >
      
         <div className="">
