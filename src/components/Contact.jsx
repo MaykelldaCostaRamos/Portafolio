@@ -3,10 +3,13 @@ export default function Contact() {
     <form
       action=""
       id="contact"
-      className="py-12 px-6 sm:px-8 md:px-12 flex text-slate-950"
+      className="flex flex-col py-12 px-6 text-lg text-slate-950 
+      bg-indigo-50/10 rounded-lg shadow-2xl backdrop-blur-sm "
     >
-      <div className="m-2 text-lg">
-        <h2 className="text-4xl font-bold mb-8 px-2">Contacto</h2>
+      
+   
+      <h2 className="text-4xl font-bold mb-8">Contacto</h2>
+
 
         <div className="mb-8">
           <label htmlFor="nombre" className="font-medium px-2">
@@ -57,7 +60,8 @@ export default function Contact() {
         >
           Enviar
         </button>
-      </div>
+
+     
     </form>
   );
 }
