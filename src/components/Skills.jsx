@@ -16,7 +16,7 @@ export default function Skills() {
   
 
   return (
-    <section id="skills" className="w-full overflow-hidden">
+    <section id="skill" className="w-full overflow-hidden">
       <div className="px-6">
         <div className="relative flex items-center w-full mt-4 overflow-hidden">
       
