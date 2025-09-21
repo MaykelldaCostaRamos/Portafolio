@@ -1,67 +1,31 @@
+
+
 export default function Contact() {
+
+
   return (
-    <form
-      action=""
-      id="contact"
-      className="flex flex-col py-12 px-6 text-lg text-slate-950 
-      bg-indigo-50/10 rounded-lg shadow-2xl backdrop-blur-sm "
+ <section
+  id="contact"
+  className="py-20 px-6 bg-slate-800 text-white rounded-t-3xl shadow-xl"
+>
+  <div className="max-w-2xl mx-auto text-center mb-12">
+    <h2 className="text-3xl font-bold mb-4">✉️ Ponte en contacto</h2>
+    <p className="text-lg text-slate-300">
+      ¿Tienes un proyecto en mente o quieres colaborar? Haz clic en el botón y podrás enviarme un correo directamente.
+    </p>
+  </div>
+
+  <div className="max-w-xs mx-auto">
+    <button
+      type="button"
+      onClick={() => window.location.href = "mailto:mkpako2009@hotmail.com"}
+      className="w-full bg-indigo-600 hover:bg-indigo-500 text-white font-bold py-3 rounded-md shadow-lg shadow-indigo-800/40 transition-colors"
     >
-      
-   
-      <h2 className="text-4xl font-bold mb-8">Contacto</h2>
+      Enviar correo
+    </button>
+  </div>
+</section>
 
 
-        <div className="mb-8">
-          <label htmlFor="nombre" className="font-medium px-2">
-            Nombre
-          </label>
-          <input
-            type="text"
-            id="name"
-            placeholder="Nombre y apellidos"
-            className="w-full mt-2 p-2 focus:outline-none focus:placeholder-transparent  bg-transparent appearance-none"
-            required
-          />
-          <div className="border-0 border-b border-indigo-950/30" aria-hidden="true"></div>
-
-        </div>
-        <div className="mb-8">
-          <label htmlFor="email" className="font-medium px-2">
-            Email
-          </label>
-          <input
-            type="email"
-            id="email"
-            placeholder="Dirección de email"
-            className="w-full mt-2 p-2 focus:outline-none focus:placeholder-transparent bg-transparent appearance-none"
-            required
-          />
-          <div className="border-0 border-b border-indigo-950/30" aria-hidden="true"></div>
-
-        </div>
-
-        <div className="mb-6">
-          <label htmlFor="message" className="font-medium px-2">
-            Mensaje
-          </label>
-          <textarea
-            id="mensaje"
-            placeholder="Escribe tu mensaje...."
-            rows="4"
-            className="w-full mt-2 p-2 focus:outline-none focus:placeholder-transparent bg-transparent appearance-none"
-          ></textarea>
-          <div className="border-0 border-b border-indigo-950/30" aria-hidden="true"></div>
-        </div>
-
-        <button
-          type="submit"
-          className="w-full bg-black text-white font-black rounded-lg p-2"
-    
-        >
-          Enviar
-        </button>
-
-     
-    </form>
   );
 }
