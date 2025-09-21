@@ -1,7 +1,7 @@
 export default function Hero() {
   return (
     <section id="hero">
-      <div className="w-full flex flex-col justify-start items-start pt-28 px-6 text-slate-950 space-y-6">
+      <div className="w-full flex flex-col justify-start items-start pt-20 px-6 text-slate-950 space-y-6">
 
         {/* Títulos y descripción */}
         <div className="space-y-2">
