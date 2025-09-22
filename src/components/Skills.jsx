@@ -17,7 +17,7 @@ export default function Skills() {
 
   return (
     <section id="skill" className="w-full overflow-hidden">
-      <div className="px-6 md:px-10">
+      <div className="px-6 md:px-10 xl:px-60 2xl:max-w-[1280px] 2xl:mx-auto">
         <div className="relative flex items-center w-full mt-4 overflow-hidden">
       
           <p className="relative bg-black text-white font-black text-xl p-2 z-10 shrink-0 rounded-lg overflow-hidden">
