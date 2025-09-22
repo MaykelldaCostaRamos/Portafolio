@@ -2,7 +2,7 @@
 
 export default function Footer() {
   return (
-    <footer className="w-full py-2 bg-black text-indigo-100/70 text-center xl:px-60 2xl:max-w-[1280px] 2xl:mx-auto">
+    <footer className="w-full py-2 bg-black text-indigo-100/70 text-center 2xl:max-w-[1280px] 2xl:mx-auto">
      
         <div className="flex justify-center gap-6 py-4">
           <a

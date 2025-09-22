@@ -7,9 +7,9 @@ export default function Header() {
         flex items-center text-slate-950 px-0 gap-2 w-auto max-w-full
         sm:w-11/12   // ~91% en móviles grandes
         md:w-5/6     // ~83% en tablets
-        lg:w-2/3     // ~66% en desktop normal
-        xl:w-1/2     // 50% en desktop grande (1280px+)
-        2xl:w-2/5    // 40% en ultra wide
+        lg:w-3/3     // ~66% en desktop normal
+        xl:w-2/4     // 50% en desktop grande (1280px+)
+        2xl:w-1/4    // 40% en ultra wide
       ">
 
 
