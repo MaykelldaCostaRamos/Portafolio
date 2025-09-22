@@ -17,18 +17,15 @@ export default function Skills() {
 
   return (
     <section id="skill" className="w-full overflow-hidden">
-      <div className="px-6">
+      <div className="px-6 md:px-10">
         <div className="relative flex items-center w-full mt-4 overflow-hidden">
       
-          
           <p className="relative bg-black text-white font-black text-xl p-2 z-10 shrink-0 rounded-lg overflow-hidden">
             Stack
             <span className="absolute top-1/2 right-[-90%] w-5 h-5 bg-indigo-600/50 rounded-full blur-sm animate-orbit-alt pointer-events-none" />
             <span className="absolute top-1/6 right-[-10%] w-5 h-5 bg-amber-400/30 rounded-full blur-sm animate-orbit pointer-events-none" />
             <span className="absolute top-1/2 left-[30%] w-5 h-5 bg-cyan-500/50 rounded-full blur-sm animate-orbit pointer-events-none" />
-          </p>
-
-          
+          </p>  
 
           {/* Ticker Motion */}
           <motion.div
