@@ -2,9 +2,9 @@
 
 export default function Footer() {
   return (
-    <footer className="w-full py-2 bg-black text-indigo-100/70 text-center 2xl:w-1/3 2xl:mx-auto">
+    <footer className="w-full py-2 bg-slate-950 text-indigo-100 text-center 2xl:w-1/2 2xl:mx-auto">
      
-        <div className="flex justify-center gap-6 py-4">
+        <div className="flex justify-center gap-6 py-3">
           <a
             href="https://github.com/MaykelldaCostaRamos"
             target="_blank"
@@ -48,13 +48,14 @@ export default function Footer() {
               <rect width="4" height="12" x="2" y="9" />
               <circle cx="4" cy="4" r="2" />
             </svg>
-          </a>       
+          </a>    
+
+        
+        <div className="space-y-1 py-2 text-sm text-indigo-100/30">
+          <p>&copy; 2025 Todos los derechos reservados.</p>
+        </div>
         </div>
 
-        <div className="space-y-1 text-sm text-indigo-100/30">
-          <p>Todos los derechos reservados</p>
-          <p>&copy; 2025 Maykell da Costa Ramos</p>
-        </div>
     
     </footer>
   );
