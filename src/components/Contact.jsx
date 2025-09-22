@@ -6,7 +6,7 @@ export default function Contact() {
   return (
  <section
   id="contact"
-  className="py-20 px-6 bg-slate-800 text-white rounded-t-3xl shadow-xl"
+  className="py-20 px-6 bg-slate-800 text-white rounded-t-3xl shadow-xl xl:px-60 2xl:max-w-[1280px] 2xl:mx-auto"
 >
   <div className="max-w-2xl mx-auto text-center mb-12">
     <h2 className="text-3xl font-bold mb-4">✉️ Ponte en contacto</h2>
