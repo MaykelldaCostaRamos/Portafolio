@@ -8,16 +8,16 @@ export default function Header() {
         
         <a
           href="#hero"
-          className="text-xl bg-white shadow-sm font-extrabold rounded-lg p-2 flex-shrink-0"
+          className="text-xl md:text-2xl bg-white shadow-sm font-extrabold rounded-lg p-2 flex-shrink-0"
         >
           M<strong>|</strong>R
         </a>
 
      
         <nav
-          className="flex gap-4 text-base md:gap-14 lg:text-lg lg:gap-10 ml-auto overflow-hidden
-                     px-6 sm:px-4 md:px-10"
-        >
+          className="flex flex-1 justify-center ml-auto gap-4 text-base overflow-hidden
+                    sm:gap-8 sm:space-x-4
+                    md:gap-10 md:space-x-6">
           <a href="#about" className="whitespace-nowrap hover:text-slate-900 transition">
             Sobre mí
           </a>
