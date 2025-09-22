@@ -2,7 +2,7 @@ import rc001 from "../assets/projects/rock-clicker/rc001.png";
 
 export default function Projects() {
   return (
-    <section id="project" className="py-20 px-6 sm:px-8 md:px-10">
+    <section id="project" className="py-20 px-6 sm:px-8 md:px-10 xl:px-60 2xl:max-w-[1280px] 2xl:mx-auto">
       <div>
         <h2 className="text-3xl font-bold py-1">
           Proyectos<span className="text-indigo-900 px-1">.</span>
