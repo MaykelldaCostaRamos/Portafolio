@@ -2,7 +2,7 @@ import WaveText from "../ui/WaveText";
 
 export default function About() {
   return (
-    <section id="about" className="py-20 px-6 sm:px-8 md:px-12 flex text-slate-950">
+    <section id="about" className="pt-20 px-6 sm:px-8 md:px-12 flex text-slate-950">
       <div className="flex flex-col justify-center items-start">
         <h2 className="text-3xl font-bold py-1">
           Sobre mí
@@ -32,7 +32,7 @@ export default function About() {
         </div>
 
         {/* Blockquote */}
-        <blockquote className="mt-6 border-l-4 border-indigo-600 pl-4 italic text-indigo-400">
+        <blockquote className="mt-2 border-l-2 border-indigo-600 pl-4 italic text-indigo-400">
           "Cada proyecto me impulsa a explorar nuevas soluciones, adquirir habilidades y crecer como
           <span className="italic"> profesional</span>."
         </blockquote>
