@@ -73,9 +73,13 @@ export default function Footer() {
             <a href="#project" className="text-indigo-200 hover:text-indigo-400 transition-colors">
               Proyectos
             </a>
-            <a href="#contact" className="text-indigo-200 hover:text-indigo-400 transition-colors">
+            <a
+              href="mailto:mkpako2009@hotmail.com"
+              className="text-indigo-200 hover:text-indigo-400 transition-colors"
+            >
               Contacto
             </a>
+
           </nav>
 
           <div className="text-sm text-indigo-200/50">
