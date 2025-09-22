@@ -2,7 +2,7 @@ import WaveText from "../ui/WaveText";
 
 export default function About() {
   return (
-    <section id="about" className="pt-20 px-6 sm:px-8 md:px-10 flex text-slate-950">
+    <section id="about" className="pt-20 px-6 sm:px-8 md:px-10 flex text-slate-950 xl:px-60 2xl:max-w-[1280px] 2xl:mx-auto">
       <div className="flex flex-col justify-center items-start">
         <h2 className="text-3xl font-bold py-1">
           Sobre mí
