@@ -1,16 +1,20 @@
 export default function Footer() {
   return (
-    <footer className="w-full pt-16 pb-8 px-6 md:pt-20 md:pb-10 bg-slate-950 text-indigo-100 md:px-10 2xl:max-w-[800px] 2xl:mx-auto">
+    <footer className="w-full pt-16 pb-8 px-6 md:pt-20 md:pb-10 bg-slate-950 text-indigo-100
+     md:px-12 
+     lg:px-44
+     xl:px-96
+     2xl:max-w-[800px] 2xl:mx-auto 2xl:px-14">
       {/* Contenedor principal: columna en móviles, fila en tablet+ */}
-      <div className="flex flex-col md:flex-row justify-between items-center md:items-start gap-12 md:gap-0">
+      <div className="flex flex-col md:flex-row justify-start items-center md:items-start gap-12 md:gap-24 lg:gap-28 xl:gap-28 2xl:gap-32">
 
         {/* Parte izquierda: nombre + social media */}
         <div className="flex flex-col items-center md:items-start space-y-10">
-          <h3 className="text-2xl font-extrabold text-indigo-200">
+          <p className="text-2xl font-extrabold text-indigo-200">
             Maykell da Costa Ramos
-          </h3>
+          </p>
 
-          <div className="flex gap-10">
+          <div className="flex gap-14">
             <a
               href="https://github.com/MaykelldaCostaRamos"
               target="_blank"
@@ -62,7 +66,7 @@ export default function Footer() {
 
         {/* Parte derecha: navegación + copyright */}
         <div className="flex flex-col items-center md:items-end space-y-6 text-center md:text-right">
-          <nav className="flex md:flex-row gap-4 md:gap-8">
+          <nav className="flex flex-1 md:flex-row gap-4 md:gap-8">
             <a href="#about" className="text-indigo-200 hover:text-indigo-400 transition-colors">
               Sobre mí
             </a>
@@ -80,6 +84,7 @@ export default function Footer() {
             </p>
           </div>
         </div>
+
       </div>
     </footer>
   );
