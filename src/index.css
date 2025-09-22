@@ -33,6 +33,13 @@ html, body {
   }
 }
 
+@media (min-width: 1024px) {
+  .header-container {
+    min-width: 984px;
+  }
+}
+
+
 
 /* SKILSS */
 /* Animación base */
