@@ -13,7 +13,7 @@ export default function Contact() {
       </div>
 
       {/* Botón de correo */}
-      <div className="max-w-xs mx-auto mb-10">
+      <div className="max-w-xs mx-auto">
         <button
           type="button"
           onClick={() => window.location.href = "mailto:mkpako2009@hotmail.com"}
