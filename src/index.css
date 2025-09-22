@@ -8,37 +8,6 @@ html, body {
   @apply bg-slate-300/5;
 }
 
-/* navbar ancho */
-.header-container {
-  min-width: 315px; 
-}
-
-@media (min-width: 375px) {
-  .header-container {
-    min-width: 350px;
-    
-  }
-}
-
-@media (min-width: 425px) {
-  .header-container {
-    min-width: 400px;
-    padding-right: 2rem;
-  }
-}
-
-@media (min-width: 768px) {
-  .header-container {
-    min-width: 700px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .header-container {
-    min-width: 820px;
-  }
-}
-
 
 /* SKILSS */
 /* Animación base */
