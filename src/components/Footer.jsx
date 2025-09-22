@@ -2,9 +2,9 @@
 
 export default function Footer() {
   return (
-    <footer className="w-full py-2 bg-slate-950 text-indigo-100 text-center 2xl:w-1/2 2xl:mx-auto">
+    <footer className="w-full py-2 bg-slate-950 text-indigo-100 text-center 2xl:max-w-[800px] 2xl:mx-auto">
      
-        <div className="flex justify-center gap-6 py-3">
+        <div className="flex items-center justify-center gap-6 py-3">
           <a
             href="https://github.com/MaykelldaCostaRamos"
             target="_blank"
@@ -12,8 +12,8 @@ export default function Footer() {
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="32"
-              height="32"
+              width="26"
+              height="26"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
@@ -34,8 +34,8 @@ export default function Footer() {
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="32"
-              height="32"
+              width="26"
+              height="26"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
@@ -51,7 +51,7 @@ export default function Footer() {
           </a>    
 
         
-        <div className="space-y-1 py-2 text-sm text-indigo-100/30">
+        <div className="text-sm text-indigo-100/30">
           <p>&copy; 2025 Todos los derechos reservados.</p>
         </div>
         </div>
