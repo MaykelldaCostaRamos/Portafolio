@@ -5,8 +5,13 @@
 
 html, body {
   overflow-x: hidden;
-  @apply bg-slate-300/5;
 }
+
+/* Contenedor base para toda la página */
+.container-page {
+  @apply w-full px-6 md:px-10 xl:px-60 2xl:max-w-[1280px] 2xl:mx-auto;
+}
+
 
 
 /* SKILSS */
