@@ -1,9 +1,8 @@
 export default function Hero() {
   return (
     <section id="hero">
-      <div className="w-full flex flex-col justify-start items-start pt-20 px-6 text-slate-950 space-y-6
-                      md:flex-row md:pt-24 md:px-10 md:space-y-0 md:gap-8 md:items-center
-                      xl:px-60 2xl:max-w-[1280px] 2xl:mx-auto">
+      <div className="container-page flex flex-col justify-start items-start pt-20 text-slate-950 space-y-6
+                      md:flex-row md:pt-24 md:space-y-0 md:gap-8 md:items-center">
 
         {/* Títulos y descripción */}
         <div className="space-y-2 md:order-2 md:w-1/2">
