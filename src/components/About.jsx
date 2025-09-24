@@ -2,18 +2,22 @@ import WaveText from "../ui/WaveText";
 
 export default function About() {
   return (
-    <section id="about" className="pt-20 px-6 sm:px-8 md:px-10 flex text-slate-950 xl:px-60 2xl:max-w-[1280px] 2xl:mx-auto">
-      <div className="flex flex-col justify-center items-start">
-        <h2 className="text-3xl font-bold py-1">
-          Sobre mí
-          <span className="text-indigo-600 px-1">.</span>
+    <section id="about" className="pt-16 text-base px-4 md:px-8 lg:px-16 xl:px-24 2xl:px-36 max-w-screen-xl mx-auto text-slate-950">
+
+      <div className="flex flex-col items-start gap-8">
+
+        <h2 className="flex items-center w-full md:text-4xl font-bold">
+          <span className="relative flex items-center mr-4 text-indigo-900">
+            <span className="w-3 h-3 rounded-full bg-indigo-200 mr-4"></span>
+            SOBRE MÍ
+          </span>
+          <span className="flex-grow h-[1px] bg-indigo-900/30"></span>
         </h2>
 
-        <div className="w-full border-0 border-b border-indigo-600" aria-hidden="true" />
-
+        
         {/* Párrafos */}
-        <div className="py-8 space-y-6">
-          <p className="text-left text-lg leading-relaxed">
+        <div className="py-2 space-y-6 md:space-y-8 lg:space-y-10">
+          <p className="text-left md:text-xl lg:text-2xl leading-relaxed">
             Soy un desarrollador web en formación continua, con la mente puesta en crecer como{" "}
             <strong className="text-indigo-600 font-semibold">
               <WaveText text="Full Stack" />
@@ -23,7 +27,7 @@ export default function About() {
             comprender el conjunto y aportar donde más se necesite.
           </p>
 
-          <p className="text-left text-lg leading-relaxed">
+          <p className="text-left md:text-xl lg:text-2xl leading-relaxed">
             Mis fortalezas están en el trabajo en equipo y en proponer soluciones: disfruto
             colaborar, intercambiar ideas y buscar caminos que hagan que un proyecto avance con
             claridad y eficiencia. Estoy convencido de que el código no solo resuelve problemas
@@ -32,7 +36,7 @@ export default function About() {
         </div>
 
         {/* Blockquote */}
-        <blockquote className="mt-2 border-l-2 border-indigo-600 pl-4 italic text-indigo-400">
+        <blockquote className="mt-2 border-l-2 border-indigo-900/30 pl-6 italic text-indigo-900 md:text-xl lg:text-2xl">
           "Cada proyecto me impulsa a explorar nuevas soluciones, adquirir habilidades y crecer como
           <span className="italic"> profesional</span>."
         </blockquote>

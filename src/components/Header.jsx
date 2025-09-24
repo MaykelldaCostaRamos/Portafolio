@@ -4,7 +4,7 @@ export default function Header() {
       <div
         className="
           fixed top-1 left-1/2 transform -translate-x-1/2 z-50
-          bg-slate-100/30 rounded-lg shadow-lg backdrop-blur-sm
+          bg-slate-100/30 backdrop-blur-sm rounded-lg shadow-lg 
           flex items-center text-slate-950 gap-2 w-auto max-w-full
           sm:w-9/12   
           md:w-4/6    
@@ -15,7 +15,7 @@ export default function Header() {
       >
         <a
           href="#hero"
-          className="text-xl md:text-2xl bg-white shadow-lg font-extrabold rounded-lg p-1 flex-shrink-0"
+          className="text-base md:text-2xl bg-white shadow-lg font-extrabold rounded-lg p-1 flex-shrink-0"
         >
           M<strong>|</strong>R
         </a>
