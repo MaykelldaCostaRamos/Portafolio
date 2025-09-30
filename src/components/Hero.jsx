@@ -1,17 +1,16 @@
 export default function Hero() {
   return (
-    <section id="hero" className="pt-20 text-base md:pt-24 lg:pt-32 px-4 md:px-8 lg:px-16 max-w-screen-xl mx-auto">
+    <section id="hero" className="pt-20 text-base md:pt-24 lg:pt-32 px-4 md:px-8 lg:px-16 max-w-screen-xl mx-auto text-slate-950">
       <div className="flex flex-col md:flex-row items-start gap-8 md:gap-12 2xl:gap-8">
 
         {/* Títulos y descripción */}
         <div className="space-y-4 md:my-auto md:w-1/2 xl:mx-auto">
-          <h1 className="text-4xl font-bold text-slate-900
+          <h1 className="text-4xl font-bold
                          md:text-5xl lg:text-6xl">
-            Web <span className="text-indigo-600">eficiente</span>.  
+            Web <span className="text-indigo-600">eficiente</span>. <br /> 
             Diseño que <span className="text-indigo-600">conecta</span>.
           </h1>
-          <p className="text-slate-700/80
-                        md:text-xl lg:text-2xl">
+          <p className="text-slate-700/80 text-lg md:text-2xl lg:text-2xl xl:text-3xl">
             Creo experiencias digitales <span className="font-semibold text-indigo-600">únicas</span>, 
             <span className="font-semibold text-indigo-600"> intuitivas</span> y 
             <span className="font-semibold text-indigo-600"> personalizadas</span>, pensadas para cautivar a tus usuarios y reflejar tu identidad.
@@ -25,7 +24,7 @@ export default function Hero() {
             src="/maykellramos.webp"
             alt="Maykell Ramos"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent rounded-lg"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent rounded-lg md:bg-none"></div>
           <div className="absolute inset-0 z-10 pb-6 flex flex-col justify-end items-center text-white">
             <span className="text-2xl font-bold md:text-3xl lg:text-4xl">
               Maykell Ramos

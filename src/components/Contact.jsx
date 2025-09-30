@@ -1,38 +1,106 @@
+import LinkedinIcon from "../assets/svg/linkedin.svg?react";
+import GithubIcon from "../assets/svg/github.svg?react";
+import MailIcon from "../assets/svg/mail.svg?react";
+
 export default function Contact() {
   return (
-    <section
-      id="contact"
-      className="pt-16 text-base px-4 md:px-8 lg:px-16 xl:px-24 2xl:px-36 max-w-screen-xl mx-auto"
-    >
-     
-        
-        {/* Título y descripción */}
-        <div className="max-w-2xl mb-8 text-left md:text-center md:mx-auto">
-          <h2 className="flex items-center w-full md:text-4xl font-bold">
-          <span className="relative flex items-center mr-4 text-indigo-900">
-            <span className="w-3 h-3 rounded-full bg-indigo-200 mr-4"></span>
-            CONTACTO
-          </span>
-          <span className="flex-grow h-[1px] bg-indigo-900/30"></span>
-        </h2>
+    <section id="contact" className="pt-20 text-base px-4 md:px-8 lg:px-16 xl:px-24 2xl:px-36 max-w-screen-xl mx-auto text-slate-9500">
+      
+        <div className="flex md:flex-row justify-start items-center gap-12 md:gap-24 lg:gap-28 xl:gap-28 2xl:gap-32 py-8">
+          <div className="flex flex-col items-start md:items-center py-4 text-left md:w-full">
+            <h2 className="flex items-center w-full md:text-2xl">
+                <span className="w-2 h-2 rounded-full bg-slate-950 mr-2"></span>
+                <span className="relative flex items-center mr-4 font-extralight tracking-wider">            
+                CONTACTO
+                </span>
+                <span className="flex-grow h-[1px] bg-slate-950/50"></span>
+            </h2>
 
-          <p className="md:text-xl text-slate-700 py-3">
-            ¿Tienes un proyecto en mente o quieres colaborar? Haz clic en el botón y podrás enviarme un correo directamente.
-          </p>
+            <div className="max-w-2xl mb-8 px-4 pt-6 md:pt-10 text-left md:text-center">
+              <p className="text-lg md:text-xl md:text-left text-slate-600">
+                ¿Tienes un proyecto en mente o quieres colaborar?
+              </p>
+            </div>
+
+            {/* Redes sociales */}
+            <div className="flex flex-col md:flex-row px-4 gap-4 md:gap-10 font-extralight tracking-widest text-slate-600">
+                <a
+                  href="https://www.linkedin.com/in/maykelldacostaramos/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  aria-label="Perfil de Linkedin de Maykell Da Costa Ramos"
+                  className="flex items-center gap-2 hover:bg-indigo-700"
+                  >
+                  <div className="w-12 h-12 flex items-center justify-center rounded-full bg-black hover:bg-indigo-700">
+                    <LinkedinIcon className="w-6 h-6" />
+                  </div>
+                  Linkedin
+                </a>
+            
+                <a
+                  href="https://github.com/MaykelldaCostaRamos"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  aria-label="Perfil de Github de Maykell Da Costa Ramos"
+                  className="flex items-center gap-2 hover:bg-indigo-700"
+                >
+                  <div className="w-12 h-12 flex items-center justify-center rounded-full bg-black hover:bg-indigo-700">
+                    <GithubIcon className="w-7 h-7" aria-hidden="true"/>
+                  </div>
+                  Github
+                </a>
+          
+                <a
+                  onClick={() =>
+                    (window.location.href = "mailto:mkpako2009@hotmail.com")
+                  }
+                  name="Email"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  aria-label="Enviar email a mkpako2009@hotmail.com"
+                  className="flex items-center gap-2 hover:bg-indigo-700"
+                >
+                  <div className="w-12 h-12 flex items-center justify-center rounded-full bg-black hover:bg-indigo-700">
+                    <MailIcon className="w-6 md:w-6 h-6 md:h-6w-5 md:h-6" />
+                  </div>
+                  Email
+                </a>
+            </div>
+
+            
+
+            {/* Navbar al final */}
+            <nav className="flex flex-wrap justify-center px-4 pt-8 md:pt-14 gap-6 md:gap-12 text-base">
+              <a
+                href="#about"
+                className="whitespace-nowrap hover:text-slate-500 transition"
+              >
+                Sobre mí
+              </a>
+              <a
+                href="#project"
+                className="whitespace-nowrap hover:text-slate-500 transition"
+              >
+                Proyectos
+              </a>              
+              <button type="button" name="Email"
+                onClick={() =>
+                  (window.location.href = "mailto:mkpako2009@hotmail.com")
+                }
+                target="_blank" rel="noreferrer noopener" className="whitespace-nowrap hover:text-slate-500 transition"
+              >
+                Contacto
+              </button>
+            </nav>
+
+
+            {/* Copyright */}
+            <div className="text-sm px-4 pt-6 md:pt-4 text-slate-900/40">
+              <p>&copy; 2025 Maykell da Costa Ramos</p>
+            </div>
+          </div>
         </div>
 
-        {/* Botón */}
-        <div className="w-1/2 mx-auto">
-          <button
-            type="button"
-            onClick={() => window.location.href = "mailto:mkpako2009@hotmail.com"}
-            className="w-full sm:w-auto md:w-96 px-6 py-3 text-white bg-indigo-600 hover:bg-indigo-700 rounded-xl font-semibold text-center shadow-md transition transform hover:-translate-y-1"
-          >
-            Enviar correo
-          </button>
-        </div>
-
-    
     </section>
   );
 }

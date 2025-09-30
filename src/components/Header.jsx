@@ -25,13 +25,13 @@ export default function Header() {
                      sm:gap-8 sm:space-x-4
                      md:gap-10 md:space-x-6"
         >
-          <a href="#about" className="whitespace-nowrap hover:text-slate-900 transition">
+          <a href="#about" className="whitespace-nowrap hover:text-slate-500 transition">
             Sobre mí
           </a>
-          <a href="#project" className="whitespace-nowrap hover:text-slate-900 transition">
+          <a href="#project" className="whitespace-nowrap hover:text-slate-500 transition">
             Proyectos
           </a>
-          <a href="#contact" className="whitespace-nowrap hover:text-slate-900 transition">
+          <a href="#contact" className="whitespace-nowrap hover:text-slate-500 transition">
             Contacto
           </a>
         </nav>
