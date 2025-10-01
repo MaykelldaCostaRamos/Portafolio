@@ -1,8 +1,11 @@
+import LayoutReveal from "../ui/LayoutReveal";
 import WaveText from "../ui/WaveText";
 
 export default function About() {
   return (
-    <section id="about" className="pt-20 text-base px-4 md:px-8 lg:px-16 xl:px-24 2xl:px-36 max-w-screen-xl mx-auto text-slate-950">
+    <LayoutReveal>
+
+    <section id="about" className="pt-28 text-base px-4 md:px-8 lg:px-16 xl:px-24 2xl:px-36 max-w-screen-xl mx-auto text-slate-950">
 
       <div className="flex flex-col items-start gap-6">
 
@@ -34,11 +37,11 @@ export default function About() {
             claridad y eficiencia. Estoy convencido de que el código no solo resuelve problemas
             técnicos, sino que también puede transformar experiencias y abrir nuevas oportunidades.
           </p>
-        </div>
-
-            
+        </div> 
         
       </div>
     </section>
+
+    </LayoutReveal>
   );
 }
