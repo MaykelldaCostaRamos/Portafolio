@@ -14,43 +14,43 @@ export default function Skills() {
   const loopSkills = [...skills, ...skills];
 
   return (
-<LayoutReveal>
   
 
       
       <section id="skill" className="overflow-hidden py-4 text-base max-w-screen-xl mx-auto px-4 md:px-8 lg:px-16 xl:px-24 2xl:px-36">
+         <LayoutReveal isHero>
         
-          <div className="relative flex items-center w-full overflow-hidden">
-        
-            <p className="relative bg-black text-white font-black md:text-xl lg:text-2xl p-3 z-10 shrink-0 rounded-lg overflow-hidden">
-              Stack
-              <span className="absolute top-1/2 right-[-90%] w-5 h-5 bg-indigo-600/50 rounded-full blur-sm animate-orbit-alt pointer-events-none" />
-              <span className="absolute top-1/6 right-[-10%] w-5 h-5 bg-amber-400/30 rounded-full blur-sm animate-orbit pointer-events-none" />
-              <span className="absolute top-1/2 left-[30%] w-5 h-5 bg-cyan-500/50 rounded-full blur-sm animate-orbit pointer-events-none" />
-            </p>  
+            <div className="relative flex items-center w-full overflow-hidden">
+          
+              <p className="relative bg-black text-white font-black md:text-xl lg:text-2xl p-3 z-10 shrink-0 rounded-lg overflow-hidden">
+                Stack
+                <span className="absolute top-1/2 right-[-90%] w-5 h-5 bg-indigo-600/50 rounded-full blur-sm animate-orbit-alt pointer-events-none" />
+                <span className="absolute top-1/6 right-[-10%] w-5 h-5 bg-amber-400/30 rounded-full blur-sm animate-orbit pointer-events-none" />
+                <span className="absolute top-1/2 left-[30%] w-5 h-5 bg-cyan-500/50 rounded-full blur-sm animate-orbit pointer-events-none" />
+              </p>  
 
-            {/* Ticker Motion */}
-            <motion.div
-              className="absolute left-0 flex gap-6 md:gap-8 whitespace-nowrap will-change-transform"
-              animate={{ x: ["0%", "-50%"] }}
-              transition={{ repeat: Infinity, repeatType: "loop" , duration: 20, ease: "linear" }}
-            >
-              {loopSkills.map((skill, i) => {
-                const Icon = skillIcons[skill];
-                return (
-                  <span key={i} className="flex items-center gap-2 text-black text-base md:text-lg lg:text-xl font-semibold px-4">
-                    {Icon && <Icon className="w-5 md:w-6 h-5 md:h-6" />}
-                    {skill}
-                  </span>
-                );
-              })}
-            </motion.div>
-            
-          </div>
+              {/* Ticker Motion */}
+              <motion.div
+                className="absolute left-0 flex gap-6 md:gap-8 whitespace-nowrap will-change-transform"
+                animate={{ x: ["0%", "-50%"] }}
+                transition={{ repeat: Infinity, repeatType: "loop" , duration: 20, ease: "linear" }}
+              >
+                {loopSkills.map((skill, i) => {
+                  const Icon = skillIcons[skill];
+                  return (
+                    <span key={i} className="flex items-center gap-2 text-black text-base md:text-lg lg:text-xl font-semibold px-4">
+                      {Icon && <Icon className="w-5 md:w-6 h-5 md:h-6" />}
+                      {skill}
+                    </span>
+                  );
+                })}
+              </motion.div>
+              
+            </div>  
+          </LayoutReveal>
       
       </section>
 
     
-</LayoutReveal>
   );
 }

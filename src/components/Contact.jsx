@@ -6,28 +6,35 @@ import LayoutReveal from "../ui/LayoutReveal";
 export default function Contact() {
   return (
 
-    <LayoutReveal>
+    
 
       <section id="contact" className="text-base px-4 md:px-8 lg:px-16 xl:px-24 2xl:px-36 max-w-screen-xl mx-auto text-slate-9500">
         
-          <div className="flex md:flex-row justify-start items-center gap-12 md:gap-24 lg:gap-28 xl:gap-28 2xl:gap-32 py-8">
-            <div className="flex flex-col items-start md:items-center py-4 text-left md:w-full">
-              <h2 className="flex items-center w-full md:text-2xl">
-                  <span className="w-2 h-2 rounded-full bg-slate-950 mr-2"></span>
-                  <span className="relative flex items-center mr-4 font-extralight tracking-wider">            
-                  CONTACTO
-                  </span>
-                  <span className="flex-grow h-[1px] bg-slate-950/50"></span>
-              </h2>
+        <LayoutReveal>
 
-              <div className="max-w-2xl mb-8 px-4 pt-6 md:pt-10 text-left md:text-center">
-                <p className="text-lg md:text-xl md:text-left text-slate-600">
-                  ¿Tienes un proyecto en mente o quieres colaborar?
-                </p>
-              </div>
+          <div className="flex md:flex-row justify-start items-center gap-12 md:gap-24 lg:gap-28 xl:gap-28 2xl:gap-32 py-8">
+                 <div className="flex flex-col items-start md:items-center py-4 text-left md:w-full">
+                <h2 className="flex items-center w-full md:text-2xl">
+                    <span className="w-2 h-2 rounded-full bg-slate-950 mr-2"></span>
+                    <span className="relative flex items-center mr-4 font-extralight tracking-wider">            
+                    CONTACTO
+                    </span>
+                    <span className="flex-grow h-[1px] bg-slate-950/50"></span>
+                </h2>
+              
+
+
+              <LayoutReveal>
+                <div className="max-w-2xl mb-8 px-4 pt-6 md:pt-10 text-left md:text-center">
+                  <p className="text-lg md:text-xl md:text-left text-slate-600">
+                    ¿Tienes un proyecto en mente o quieres colaborar?
+                  </p>
+                </div>
+              </LayoutReveal>
 
               {/* Redes sociales */}
-              <div className="flex flex-col md:flex-row px-4 gap-4 md:gap-10 font-extralight tracking-widest text-slate-600">
+              <LayoutReveal>
+                <div className="flex flex-col md:flex-row px-4 gap-4 md:gap-10 font-extralight tracking-widest text-slate-600">
                   <a
                     href="https://www.linkedin.com/in/maykelldacostaramos/"
                     target="_blank"
@@ -69,44 +76,47 @@ export default function Contact() {
                     </div>
                     Email
                   </a>
-              </div>
+                </div>
+              </LayoutReveal>
 
               
 
-              {/* Navbar al final */}
-              <nav className="flex flex-wrap justify-center px-4 pt-8 md:pt-14 gap-6 md:gap-12 text-base">
-                <a
-                  href="#about"
-                  className="whitespace-nowrap hover:text-slate-500 transition"
-                >
-                  Sobre mí
-                </a>
-                <a
-                  href="#project"
-                  className="whitespace-nowrap hover:text-slate-500 transition"
-                >
-                  Proyectos
-                </a>              
-                <button type="button" name="Email"
-                  onClick={() =>
-                    (window.location.href = "mailto:mkpako2009@hotmail.com")
-                  }
-                  target="_blank" rel="noreferrer noopener" className="whitespace-nowrap hover:text-slate-500 transition"
-                >
-                  Contacto
-                </button>
-              </nav>
+              <LayoutReveal>
+                <nav className="flex flex-wrap justify-center px-4 pt-8 md:pt-14 gap-6 md:gap-12 text-base">
+                  <a
+                    href="#about"
+                    className="whitespace-nowrap hover:text-slate-500 transition"
+                  >
+                    Sobre mí
+                  </a>
+                  <a
+                    href="#project"
+                    className="whitespace-nowrap hover:text-slate-500 transition"
+                  >
+                    Proyectos
+                  </a>              
+                  <button type="button" name="Email"
+                    onClick={() =>
+                      (window.location.href = "mailto:mkpako2009@hotmail.com")
+                    }
+                    target="_blank" rel="noreferrer noopener" className="whitespace-nowrap hover:text-slate-500 transition"
+                  >
+                    Contacto
+                  </button>
+                </nav>
+              </LayoutReveal>
 
-
-              {/* Copyright */}
-              <div className="text-sm px-4 pt-6 md:pt-4 text-slate-900/40">
-                <p>&copy; 2025 Maykell da Costa Ramos</p>
-              </div>
-            </div>
+              <LayoutReveal>
+                <div className="text-sm px-4 pt-6 md:pt-4 text-slate-900/40">
+                  <p>&copy; 2025 Maykell da Costa Ramos</p>
+                </div>
+              </LayoutReveal>
+                 </div>
           </div>
+              </LayoutReveal>
+          
 
       </section>
 
-    </LayoutReveal>
   );
 }
