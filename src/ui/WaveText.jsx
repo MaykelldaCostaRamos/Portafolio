@@ -16,7 +16,7 @@ export default function WaveText({ text = "" }) {
     <motion.span
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true }} // 👈 se ejecuta solo una vez
+      viewport={{ once: true }} 
       transition={{ staggerChildren: 0.05 }}
       className="inline-block"
     >

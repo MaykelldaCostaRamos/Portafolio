@@ -9,8 +9,8 @@ import LayoutReveal from "../ui/LayoutReveal";
 
 export default function Projects() {
   return (
-
-    <LayoutReveal>
+      <LayoutReveal>
+    
 
       <section id="project" className="pt-28 text-base px-4 md:px-8 lg:px-16 xl:px-24 2xl:px-36 max-w-screen-xl mx-auto text-slate-950">
 
@@ -84,6 +84,6 @@ export default function Projects() {
 
       </section>
 
-    </LayoutReveal>
+   </LayoutReveal>
   );
 }

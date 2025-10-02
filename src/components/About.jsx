@@ -7,11 +7,11 @@ export default function About() {
 
     <section id="about" className="pt-28 text-base px-4 md:px-8 lg:px-16 xl:px-24 2xl:px-36 max-w-screen-xl mx-auto text-slate-950">
 
-      <div className="flex flex-col items-start gap-6">
+      <div className="flex flex-col items-start space-y-6">
 
         <h2 className="flex items-center w-full md:text-2xl">
           
-              <span className="relative flex items-center mr-4 font-extralight tracking-wider">
+              <span className="flex items-center mr-4 font-extralight tracking-wider">
               <span className="w-2 h-2 rounded-full bg-slate-950 mr-2"></span>
               SOBRE MÍ
               </span>
@@ -41,7 +41,7 @@ export default function About() {
         
       </div>
     </section>
-
-    </LayoutReveal>
+</LayoutReveal>
+    
   );
 }

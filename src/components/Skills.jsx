@@ -14,10 +14,11 @@ export default function Skills() {
   const loopSkills = [...skills, ...skills];
 
   return (
+<LayoutReveal>
+  
 
-      <LayoutReveal>
-
-      <section id="skill" className="w-full overflow-hidden py-4 text-base max-w-screen-xl mx-auto px-4 md:px-8 lg:px-16 xl:px-24 2xl:px-36">
+      
+      <section id="skill" className="overflow-hidden py-4 text-base max-w-screen-xl mx-auto px-4 md:px-8 lg:px-16 xl:px-24 2xl:px-36">
         
           <div className="relative flex items-center w-full overflow-hidden">
         
@@ -49,7 +50,7 @@ export default function Skills() {
       
       </section>
 
-      </LayoutReveal>
-
+    
+</LayoutReveal>
   );
 }

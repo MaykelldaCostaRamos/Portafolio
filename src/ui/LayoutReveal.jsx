@@ -19,15 +19,18 @@ export default function LayoutReveal({
   isHero = false,
 }) {
   return (
-    <motion.div
-      initial="hidden"
-      animate={isHero ? "visible" : undefined}
-      whileInView={isHero ? undefined : "visible"}
-      variants={variants}
-      viewport={isHero ? undefined : { once: false, amount: 0.15 }}
-      className={`${className} will-change-transform will-change-opacity`}
-    >
-      {children}
-    </motion.div>
+    <div className="overflow-hidden">
+      <motion.div
+        initial="hidden"
+        animate={isHero ? "visible" : undefined}
+        whileInView={isHero ? undefined : "visible"}
+        variants={variants}
+        viewport={isHero ? undefined : { once: false, amount: 0.15 }}
+        className={`${className} will-change-transform will-change-opacity`}
+      >
+        {children}
+      </motion.div>
+    </div>
   );
 }
+
