@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+
 import HTMLIcon from "../assets/svg/html5.svg?react";
 import CSSIcon from "../assets/svg/css3.svg?react";
 import JSIcon from "../assets/svg/js.svg?react";
@@ -16,8 +17,8 @@ export default function Skills() {
 
       <LayoutReveal>
 
-      <section id="skill" className="w-full overflow-hidden py-2 text-base">
-        <div className="max-w-screen-xl mx-auto px-4 md:px-8 lg:px-16 xl:px-24 2xl:px-36">
+      <section id="skill" className="w-full overflow-hidden py-4 text-base max-w-screen-xl mx-auto px-4 md:px-8 lg:px-16 xl:px-24 2xl:px-36">
+        
           <div className="relative flex items-center w-full overflow-hidden">
         
             <p className="relative bg-black text-white font-black md:text-xl lg:text-2xl p-3 z-10 shrink-0 rounded-lg overflow-hidden">
@@ -45,7 +46,7 @@ export default function Skills() {
             </motion.div>
             
           </div>
-        </div>
+      
       </section>
 
       </LayoutReveal>
