@@ -13,16 +13,14 @@ export default function Contact() {
         <LayoutReveal>
 
           <div className="flex md:flex-row justify-start items-center gap-12 md:gap-24 lg:gap-28 xl:gap-28 2xl:gap-32 py-8">
-                 <div className="flex flex-col items-start md:items-center py-4 text-left md:w-full">
-                <h2 className="flex items-center w-full md:text-2xl">
-                    <span className="w-2 h-2 rounded-full bg-slate-950 mr-2"></span>
-                    <span className="relative flex items-center mr-4 font-extralight tracking-wider">            
-                    CONTACTO
-                    </span>
-                    <span className="flex-grow h-[1px] bg-slate-950/50"></span>
-                </h2>
-              
-
+            <div className="flex flex-col items-start md:items-center py-4 text-left md:w-full">
+              <h2 className="flex items-center w-full md:text-2xl">
+                  <span className="w-2 h-2 rounded-full bg-slate-950 mr-2"></span>
+                  <span className="relative flex items-center mr-4 font-extralight tracking-wider">            
+                  CONTACTO
+                  </span>
+                  <span className="flex-grow h-[1px] bg-slate-950/50"></span>
+              </h2>
 
               <LayoutReveal>
                 <div className="max-w-2xl mb-8 px-4 pt-6 md:pt-10 text-left md:text-center">
@@ -33,14 +31,14 @@ export default function Contact() {
               </LayoutReveal>
 
               {/* Redes sociales */}
-              <LayoutReveal>
+              <LayoutReveal isHero>
                 <div className="flex flex-col md:flex-row px-4 gap-4 md:gap-10 font-extralight tracking-widest text-slate-600">
                   <a
                     href="https://www.linkedin.com/in/maykelldacostaramos/"
                     target="_blank"
                     rel="noreferrer noopener"
                     aria-label="Perfil de Linkedin de Maykell Da Costa Ramos"
-                    className="flex items-center gap-2 hover:bg-indigo-700"
+                    className="flex items-center gap-2 hover:text-indigo-700"
                     >
                     <div className="w-12 h-12 flex items-center justify-center rounded-full bg-black hover:bg-indigo-700">
                       <LinkedinIcon className="w-6 h-6" />
@@ -53,7 +51,7 @@ export default function Contact() {
                     target="_blank"
                     rel="noreferrer noopener"
                     aria-label="Perfil de Github de Maykell Da Costa Ramos"
-                    className="flex items-center gap-2 hover:bg-indigo-700"
+                    className="flex items-center gap-2 hover:text-indigo-700"
                   >
                     <div className="w-12 h-12 flex items-center justify-center rounded-full bg-black hover:bg-indigo-700">
                       <GithubIcon className="w-7 h-7" aria-hidden="true"/>
@@ -69,7 +67,7 @@ export default function Contact() {
                     target="_blank"
                     rel="noreferrer noopener"
                     aria-label="Enviar email a mkpako2009@hotmail.com"
-                    className="flex items-center gap-2 hover:bg-indigo-700"
+                    className="flex items-center gap-2 hover:text-indigo-700"
                   >
                     <div className="w-12 h-12 flex items-center justify-center rounded-full bg-black hover:bg-indigo-700">
                       <MailIcon className="w-6 md:w-6 h-6 md:h-6w-5 md:h-6" />
@@ -106,14 +104,14 @@ export default function Contact() {
                 </nav>
               </LayoutReveal>
 
-              <LayoutReveal>
+              <LayoutReveal isHero>
                 <div className="text-sm px-4 pt-6 md:pt-4 text-slate-900/40">
                   <p>&copy; 2025 Maykell da Costa Ramos</p>
                 </div>
               </LayoutReveal>
                  </div>
           </div>
-              </LayoutReveal>
+        </LayoutReveal>
           
 
       </section>
