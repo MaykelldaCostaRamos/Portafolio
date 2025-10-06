@@ -8,23 +8,23 @@ export default function Contact() {
 
     
 
-      <section id="contact" className="text-base px-4 md:px-8 lg:px-16 xl:px-24 2xl:px-36 max-w-screen-xl mx-auto text-slate-9500">
+      <section id="contact" className="text-base px-4 md:px-8 lg:px-16 xl:px-24 2xl:px-36 max-w-screen-xl mx-auto text-slate-950 dark:text-slate-200">
         
         <LayoutReveal>
 
           <div className="flex md:flex-row justify-start items-center gap-12 md:gap-24 lg:gap-28 xl:gap-28 2xl:gap-32 py-8">
             <div className="flex flex-col items-start md:items-center py-4 text-left md:w-full">
               <h2 className="flex items-center w-full md:text-2xl">
-                  <span className="w-2 h-2 rounded-full bg-slate-950 mr-2"></span>
+                  <span className="w-2 h-2 rounded-full bg-slate-950 dark:bg-slate-200 mr-2"></span>
                   <span className="relative flex items-center mr-4 font-extralight tracking-wider">            
                   CONTACTO
                   </span>
-                  <span className="flex-grow h-[1px] bg-slate-950/50"></span>
+                  <span className="flex-grow h-[1px] bg-slate-950/50 dark:bg-slate-200"></span>
               </h2>
 
               <LayoutReveal>
                 <div className="max-w-2xl mb-8 px-4 pt-6 md:pt-10 text-left md:text-center">
-                  <p className="text-lg md:text-xl md:text-left text-slate-600">
+                  <p className="text-lg md:text-xl md:text-left text-slate-600 dark:text-slate-200">
                     ¿Tienes un proyecto en mente o quieres colaborar?
                   </p>
                 </div>
@@ -32,7 +32,7 @@ export default function Contact() {
 
               {/* Redes sociales */}
               <LayoutReveal isHero>
-                <div className="flex flex-col md:flex-row px-4 gap-4 md:gap-10 font-extralight tracking-widest text-slate-600">
+                <div className="flex flex-col md:flex-row px-4 gap-4 md:gap-10 font-extralight tracking-widest text-slate-600 dark:text-slate-200">
                   <a
                     href="https://www.linkedin.com/in/maykelldacostaramos/"
                     target="_blank"
@@ -105,7 +105,7 @@ export default function Contact() {
               </LayoutReveal>
 
               <LayoutReveal isHero>
-                <div className="text-sm px-4 pt-6 md:pt-4 text-slate-900/40">
+                <div className="text-sm px-4 pt-6 md:pt-4 text-slate-900/40 dark:text-slate-200">
                   <p>&copy; 2025 Maykell da Costa Ramos</p>
                 </div>
               </LayoutReveal>

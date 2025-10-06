@@ -11,23 +11,23 @@ export default function Projects() {
   return (
     
     
-    <section id="project" className="pt-20 text-base px-4 md:px-8 lg:px-16 xl:px-24 2xl:px-36 max-w-screen-xl mx-auto text-slate-950">
+    <section id="project" className="pt-20 text-base px-4 md:px-8 lg:px-16 xl:px-24 2xl:px-36 max-w-screen-xl mx-auto text-slate-950 dark:text-slate-200">
       <LayoutReveal>
         <div className="flex flex-col items-start space-y-6">
 
           <h2 className="flex items-center w-full md:text-2xl">                                       
             <span className="relative flex items-center mr-4 font-extralight tracking-wider">
-            <span className="w-2 h-2 rounded-full bg-slate-950 mr-2"></span>
+            <span className="w-2 h-2 rounded-full bg-slate-950 dark:bg-slate-200 mr-2"></span>
               PROYECTOS
             </span>                                          
-            <span className="flex-grow h-[1px] bg-slate-950/50"></span>
+            <span className="flex-grow h-[1px] bg-slate-950/50 dark:bg-slate-200"></span>
           </h2>
                                         
 
           {/* Proyecto */}
             <LayoutReveal>
             <div className="pt-8 flex justify-center">
-              <div className="w-full max-w-[900px] p-6 rounded-2xl bg-black shadow-xl border border-slate-200 transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl flex flex-col md:flex-row gap-6">
+              <div className="w-full max-w-[900px] p-6 rounded-2xl bg-black text-slate-200 shadow-xl border border-slate-200 transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl flex flex-col md:flex-row gap-6">
           
                 {/* Imagen */}
                 <img
@@ -40,7 +40,7 @@ export default function Projects() {
                 {/* Contenido */}
                 <div className="flex flex-col justify-between md:w-1/2">
                   <div>
-                    <h3 className="text-lg md:text-3xl font-bold text-indigo-100">
+                    <h3 className="text-lg md:text-3xl font-bold">
                       Rock Clicker
                     </h3>
 
@@ -73,7 +73,7 @@ export default function Projects() {
                       href="https://github.com/MaykelldaCostaRamos/Project-Rock-Clicker"
                       target="_blank"
                       rel="noreferrer noopener"
-                      className="w-full sm:w-auto flex items-center justify-center gap-3 px-6 py-3 border-2 border-indigo-50 text-indigo-50 hover:bg-indigo-700 rounded-xl font-semibold text-center transition transform hover:-translate-y-1"
+                      className="w-full sm:w-auto flex items-center justify-center gap-3 px-6 py-3 border-2 border-indigo-50 text-indigo-50 hover:bg-indigo-200/20 hover:backdrop-blur-sm  rounded-xl font-semibold text-center transition transform hover:-translate-y-1"
                     >
                       <GithubIcon className="w-5 md:w-6 h-5 md:h-6 inline-block"/>
                       Ver en GitHub

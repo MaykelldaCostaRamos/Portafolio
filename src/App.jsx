@@ -4,20 +4,21 @@ import Skills from "./components/Skills";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
+import ThemeProvider from "./context/ThemeProvider";
 
 
 function App() {
   
 
   return (
-    <>
+    <ThemeProvider>
      <Header />
      <Hero />
      <Skills />
      <About />
      <Projects />
      <Contact />
-    </>
+    </ThemeProvider>
   )
 }
 

@@ -5,7 +5,7 @@ export default function About() {
   return (
     
 
-    <section id="about" className="pt-20 max-h-dvh text-base px-4 md:px-8 lg:px-16 xl:px-24 2xl:px-36 max-w-screen-xl mx-auto text-slate-950">
+    <section id="about" className="pt-20 max-h-dvh text-base px-4 md:px-8 lg:px-16 xl:px-24 2xl:px-36 max-w-screen-xl mx-auto text-slate-950 dark:text-slate-200">
 
    <LayoutReveal>
       <div className="flex flex-col items-start space-y-6">
@@ -13,10 +13,10 @@ export default function About() {
         <h2 className="flex items-center w-full md:text-2xl">
           
               <span className="flex items-center mr-4 font-extralight tracking-wider">
-              <span className="w-2 h-2 rounded-full bg-slate-950 mr-2"></span>
+              <span className="w-2 h-2 rounded-full bg-slate-950 dark:bg-slate-200 mr-2"></span>
               SOBRE MÍ
               </span>
-              <span className="flex-1 h-[1px] bg-slate-950/50"></span>
+              <span className="flex-1 h-[1px] bg-slate-950/50 dark:bg-slate-200"></span>
         </h2>
         
 

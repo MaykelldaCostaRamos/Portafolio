@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="pt-20 text-base px-4 md:pt-24 lg:pt-28 md:px-8 lg:px-16 xl:px-24 2xl:px-36 max-w-screen-xl mx-auto text-slate-950"
+      className="pt-20 text-base px-4 md:pt-24 lg:pt-28 md:px-8 lg:px-16 xl:px-24 2xl:px-36 max-w-screen-xl mx-auto text-slate-950 dark:text-slate-200"
     >
       <div className="flex flex-col md:flex-row items-center gap-8 md:gap-10">
         
@@ -18,7 +18,7 @@ export default function Hero() {
           </LayoutReveal>
 
           <LayoutReveal isHero>
-            <p className="text-slate-700/80 text-lg md:text-2xl lg:text-2xl xl:text-3xl">
+            <p className="text-slate-700/80 dark:text-slate-400 text-lg md:text-2xl lg:text-2xl xl:text-3xl">
               Creo experiencias digitales{" "}
               <span className="font-semibold text-indigo-600">únicas</span>,{" "}
               <span className="font-semibold text-indigo-600"> intuitivas</span>{" "}

@@ -38,7 +38,7 @@ export default function Skills() {
                 {loopSkills.map((skill, i) => {
                   const Icon = skillIcons[skill];
                   return (
-                    <span key={i} className="flex items-center gap-2 text-black text-base md:text-lg lg:text-xl font-semibold px-4">
+                    <span key={i} className="flex items-center gap-2 text-black dark:text-slate-200 text-base md:text-lg lg:text-xl font-semibold px-4">
                       {Icon && <Icon className="w-5 md:w-6 h-5 md:h-6" />}
                       {skill}
                     </span>

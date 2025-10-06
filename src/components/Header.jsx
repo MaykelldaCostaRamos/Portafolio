@@ -1,3 +1,5 @@
+import ThemeToggle from "./ThemeToggle";
+
 export default function Header() {
   return (
     <header id="home">
@@ -10,30 +12,46 @@ export default function Header() {
           md:w-4/6    
           lg:w-3/3   
           xl:w-1/2     
-          2xl:w-1/4    
+          2xl:w-2/6
+          
+          dark:bg-transparent
+          dark:text-white
+        
+          
         "
       >
         <a
           href="#hero"
-          className="text-base md:text-2xl bg-white shadow-lg font-extrabold rounded-lg p-1 flex-shrink-0"
+          className="text-base md:text-2xl shadow-lg font-extrabold rounded-lg p-1 flex-shrink-0"
         >
           M<strong>|</strong>R
         </a>
 
         <nav
-          className="flex flex-1 justify-center ml-auto gap-4 px-3 text-base overflow-hidden
+          className="flex flex-1 justify-evenly ml-auto gap-4 px-3 text-base 
                      sm:gap-8 sm:space-x-4
                      md:gap-10 md:space-x-6"
         >
-          <a href="#about" className="whitespace-nowrap hover:text-slate-500 transition">
+          <a
+            href="#about"
+            className="whitespace-nowrap hover:text-slate-500 transition"
+          >
             Sobre mí
           </a>
-          <a href="#project" className="whitespace-nowrap hover:text-slate-500 transition">
+          <a
+            href="#project"
+            className="whitespace-nowrap hover:text-slate-500 transition"
+          >
             Proyectos
           </a>
-          <a href="#contact" className="whitespace-nowrap hover:text-slate-500 transition">
+          <a
+            href="#contact"
+            className="whitespace-nowrap hover:text-slate-500 transition"
+          >
             Contacto
           </a>
+
+          <ThemeToggle/>
         </nav>
       </div>
     </header>

@@ -33,3 +33,12 @@ html, body {
   animation: orbit-alt 9s ease-in-out infinite;
 }
 
+
+/* DARK-MODE */
+body {
+  background-color: white;
+}
+
+.dark body {
+  background-color: black;
+}
