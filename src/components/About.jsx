@@ -10,15 +10,13 @@ export default function About() {
    <LayoutReveal>
       <div className="flex flex-col items-start space-y-6">
      
-        <h2 className="flex items-center w-full md:text-2xl">
-          
-              <span className="flex items-center mr-4 font-extralight tracking-wider">
+        <h2 className="flex items-center w-full md:text-2xl">            
+            <span className="flex items-center mr-4 font-extralight tracking-wider">
               <span className="w-2 h-2 rounded-full bg-slate-950 dark:bg-slate-200 mr-2"></span>
               SOBRE MÍ
-              </span>
-              <span className="flex-1 h-[1px] bg-slate-950/50 dark:bg-slate-200"></span>
+            </span>      
+            <span className="flex-1 h-[1px] bg-slate-950/50 dark:bg-slate-200"></span>
         </h2>
-        
 
         
         {/* Párrafos */}
@@ -30,7 +28,8 @@ export default function About() {
             <strong className="text-indigo-600 font-semibold">
               <WaveText text="Full Stack" />
             </strong>
-            . Me gusta asumir nuevos retos porque cada proyecto representa la oportunidad de
+            . 
+            Me gusta asumir nuevos retos porque cada proyecto representa la oportunidad de
             superarme y desarrollar nuevas capacidades. No me limito a una sola área, me interesa
             comprender el conjunto y aportar donde más se necesite.
           </p>
