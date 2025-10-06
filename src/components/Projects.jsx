@@ -6,6 +6,7 @@ import TailwindcssIcon from "../assets/svg/tailwindcss.svg?react";
 import FirebaseIcon from "../assets/svg/firebase.svg?react";
 import JSIcon from "../assets/svg/js.svg?react";
 import LayoutReveal from "../ui/LayoutReveal";
+import AnimatedLine from "../ui/AnimatedLine";
 
 export default function Projects() {
   return (
@@ -20,7 +21,7 @@ export default function Projects() {
             <span className="w-2 h-2 rounded-full bg-slate-950 dark:bg-slate-200 mr-2"></span>
               PROYECTOS
             </span>                                          
-            <span className="flex-grow h-[1px] bg-slate-950/50 dark:bg-slate-200"></span>
+            <AnimatedLine />
           </h2>
                                         
 

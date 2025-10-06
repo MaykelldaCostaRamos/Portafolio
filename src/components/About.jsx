@@ -1,5 +1,6 @@
 import LayoutReveal from "../ui/LayoutReveal";
 import WaveText from "../ui/WaveText";
+import AnimatedLine from "../ui/AnimatedLine";
 
 export default function About() {
   return (
@@ -15,7 +16,7 @@ export default function About() {
               <span className="w-2 h-2 rounded-full bg-slate-950 dark:bg-slate-200 mr-2"></span>
               SOBRE MÍ
             </span>      
-            <span className="flex-1 h-[1px] bg-slate-950/50 dark:bg-slate-200"></span>
+            <AnimatedLine/>
         </h2>
 
         

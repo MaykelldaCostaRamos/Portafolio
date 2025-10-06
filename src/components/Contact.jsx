@@ -2,13 +2,14 @@ import LinkedinIcon from "../assets/svg/linkedin.svg?react";
 import GithubIcon from "../assets/svg/github.svg?react";
 import MailIcon from "../assets/svg/mail.svg?react";
 import LayoutReveal from "../ui/LayoutReveal";
+import AnimatedLine from "../ui/AnimatedLine";
 
 export default function Contact() {
   return (
 
     
 
-      <section id="contact" className="pt-12 text-base px-4 md:px-8 lg:px-16 xl:px-24 2xl:px-36 max-w-screen-xl mx-auto text-slate-950">
+      <section id="contact" className="pt-12 text-base px-4 md:px-8 lg:px-16 xl:px-24 2xl:px-36 max-w-screen-xl mx-auto text-slate-950 dark:text-slate-200">
         
         <LayoutReveal>
 
@@ -19,7 +20,7 @@ export default function Contact() {
                         <span className="relative flex items-center mr-4 font-extralight tracking-wider">            
                         CONTACTO
                         </span>
-                        <span className="flex-grow h-[1px] bg-slate-950/50 dark:bg-slate-200"></span>
+                        <AnimatedLine/>
                     </h2>
 
                     <LayoutReveal>
