@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
-import  { ThemeContext } from "./ThemeContext";
-
+import { ThemeContext } from "./ThemeContext";
 
 export default function ThemeProvider({ children }) {
-  const [theme, setTheme] = useState("system");
+  const [theme, setTheme] = useState(() => {
+    return localStorage.getItem("theme") || "system";
+  });
 
-  // Aplicar tema según estado
   useEffect(() => {
     const applyTheme = (currentTheme) => {
       if (currentTheme === "dark") {
@@ -18,8 +18,13 @@ export default function ThemeProvider({ children }) {
       }
     };
 
+    // 💾 Guardar el tema cada vez que cambia
+    localStorage.setItem("theme", theme);
+
+    // 🌓 Aplicar tema
     applyTheme(theme);
 
+    // 👂 Detectar cambio en el tema del sistema
     const themeList = window.matchMedia("(prefers-color-scheme: dark)");
     const handleChange = () => {
       if (theme === "system") applyTheme("system");
@@ -29,5 +34,9 @@ export default function ThemeProvider({ children }) {
     return () => themeList.removeEventListener("change", handleChange);
   }, [theme]);
 
-  return <ThemeContext.Provider value={{ theme, setTheme }}>{children}</ThemeContext.Provider>;
+  return (
+    <ThemeContext.Provider value={{ theme, setTheme }}>
+      {children}
+    </ThemeContext.Provider>
+  );
 }
