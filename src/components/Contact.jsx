@@ -44,7 +44,7 @@ export default function Contact() {
                           aria-label="Perfil de Linkedin de Maykell Da Costa Ramos"
                           className="group flex items-center gap-3 transition"
                         >
-                          <div className="flex items-center justify-center w-12 h-12 rounded-full bg-black group-hover:bg-indigo-700 transition">
+                          <div className="flex items-center justify-center w-12 h-12 rounded-full bg-black dark:bg-indigo-700 group-hover:bg-indigo-700/70 transition">
                             <LinkedinIcon className="w-5 h-5 text-white" />
                           </div>
                           <span className="flex items-center h-12 group-hover:text-indigo-400 transition translate-y-1">
@@ -60,7 +60,7 @@ export default function Contact() {
                           aria-label="Perfil de Github de Maykell Da Costa Ramos"
                           className="group flex items-center gap-3 transition"
                         >
-                          <div className="flex items-center justify-center w-12 h-12 rounded-full bg-black group-hover:bg-indigo-700 transition">
+                          <div className="flex items-center justify-center w-12 h-12 rounded-full bg-black dark:bg-indigo-700 group-hover:bg-indigo-700/70 transition">
                             <GithubIcon className="w-6 h-6 text-white" aria-hidden="true" />
                           </div>
                           <span className="flex items-center h-12 group-hover:text-indigo-400 transition translate-y-1">
@@ -77,7 +77,7 @@ export default function Contact() {
                           aria-label="Enviar email a mkpako2009@hotmail.com"
                           className="group flex items-center gap-3 transition cursor-pointer"
                         >
-                          <div className="flex items-center justify-center w-12 h-12 rounded-full bg-black group-hover:bg-indigo-700 transition">
+                          <div className="flex items-center justify-center w-12 h-12 rounded-full bg-black dark:bg-indigo-700 group-hover:bg-indigo-700/70 transition">
                             <MailIcon className="w-5 h-5 text-white" />
                           </div>
                           <span className="flex items-center h-12 group-hover:text-indigo-400 transition">
