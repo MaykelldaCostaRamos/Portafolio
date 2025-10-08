@@ -47,7 +47,7 @@ export default function Contact() {
                           <div className="flex items-center justify-center w-12 h-12 rounded-full bg-black group-hover:bg-indigo-700 transition">
                             <LinkedinIcon className="w-5 h-5 text-white" />
                           </div>
-                          <span className="flex items-center h-12 group-hover:text-indigo-400 transition">
+                          <span className="flex items-center h-12 group-hover:text-indigo-400 transition translate-y-1">
                             Linkedin
                           </span>
                         </a>
@@ -63,7 +63,7 @@ export default function Contact() {
                           <div className="flex items-center justify-center w-12 h-12 rounded-full bg-black group-hover:bg-indigo-700 transition">
                             <GithubIcon className="w-6 h-6 text-white" aria-hidden="true" />
                           </div>
-                          <span className="flex items-center h-12 group-hover:text-indigo-400 transition">
+                          <span className="flex items-center h-12 group-hover:text-indigo-400 transition translate-y-1">
                             Github
                           </span>
                         </a>
