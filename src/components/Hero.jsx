@@ -36,7 +36,7 @@ export default function Hero() {
           <div className="relative w-full">
             <img
               className="w-full rounded-lg shadow-xl"
-              src="/maykellramos.webp"
+              src="/pro-003.webp"
               alt="Maykell Ramos"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent rounded-lg md:bg-none"></div>
