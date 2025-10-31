@@ -35,8 +35,8 @@ export default function Hero() {
         <LayoutReveal isHero className="delay-400 md:w-64 lg:w-80 lg:mx-auto xl:w-96 ">
           <div className="relative w-full">
             <img
-              className="w-full rounded-lg shadow-xl"
-              src="/pro-003.webp"
+              className="w-full rounded-lg"
+              src="/profile.webp"
               alt="Maykell Ramos"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent rounded-lg md:bg-none"></div>
