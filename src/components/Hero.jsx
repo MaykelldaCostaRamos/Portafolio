@@ -12,27 +12,36 @@ export default function Hero() {
       <div className="flex flex-col md:flex-row items-center gap-8 md:gap-10">
         
         {/* Títulos y descripción */}
-        <div className="space-y-4 flex-1 xl:mx-auto">
-          <LayoutReveal isHero>
-            <h1 className="text-4xl font-bold md:text-5xl lg:text-6xl">
-              Web <span className="text-indigo-600">eficiente</span>. <br />
+        <div className="space-y-6 flex-1 xl:mx-autot">
+          {/* Título */}
+          <h1 className="text-4xl font-bold md:text-5xl lg:text-6xl">
+            <LayoutReveal isHero  >
+              Web <span className="text-indigo-600">eficiente</span>.
+            </LayoutReveal>{" "}
+            <LayoutReveal isHero >
               Diseño que <span className="text-indigo-600">conecta</span>.
-            </h1>
-          </LayoutReveal>
+            </LayoutReveal>
+          </h1>
 
-          <LayoutReveal isHero>
-            <p className="text-slate-700/80 dark:text-slate-400 text-lg md:text-2xl lg:text-2xl xl:text-5xl font-light tracking-wide">
+          {/* Párrafo */}
+          <p className="text-slate-700/80 dark:text-slate-400 text-lg md:text-2xl lg:text-2xl xl:text-4xl font-light">
+            <LayoutReveal isHero  >
               Creo experiencias digitales{" "}
               <span className="font-semibold text-indigo-600">únicas</span>,{" "}
-              <span className="font-semibold text-indigo-600">intuitivas</span>{" "}
-              y
-              <span className="font-semibold text-indigo-600">
-                {" "}personalizadas
-              </span>
-              , pensadas para cautivar a tus usuarios y reflejar tu identidad.
-            </p>
-          </LayoutReveal>
+            </LayoutReveal>
+            <LayoutReveal isHero >
+              <span className="font-semibold text-indigo-600">intuitivas</span> y{" "}
+              <span className="font-semibold text-indigo-600">personalizadas</span>,
+            </LayoutReveal>
+            <LayoutReveal isHero >
+              pensadas para cautivar a tus
+            </LayoutReveal>
+            <LayoutReveal isHero >
+              usuarios y reflejar tu identidad.
+            </LayoutReveal>
+          </p>
         </div>
+
 
         {/* Imagen */}
         <LayoutReveal isHero className="delay-400 md:w-64 lg:w-80 lg:mx-auto xl:w-96">
@@ -43,16 +52,19 @@ export default function Hero() {
               alt="Maykell Ramos"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent rounded-lg"></div>
-            <div className="absolute inset-0 z-10 pb-24 flex flex-col justify-end items-center text-white">
+            <div className="absolute inset-20 flex flex-col justify-end p-2 text-white">
               <BlinkVariants>
-                <span className="text-2xl font-bold md:text-3xl lg:text-4xl">
-                Maykell Ramos            
+                  <LayoutReveal isHero>
+                <span className="text-2xl font-bold md:text-3xl lg:text-6xl">
+                  Maykell Ramos            
                 </span>
+                  </LayoutReveal>
                 <p className="md:text-xl lg:text-2xl">
-                Full-Stack Junior
-              </p>
-                </BlinkVariants>
-
+                  <LayoutReveal isHero>
+                    Full-Stack Junior
+                  </LayoutReveal>
+                </p>
+              </BlinkVariants>
             </div>
           </div>
         </LayoutReveal>
