@@ -1,24 +1,12 @@
-import { motion } from "framer-motion";
 import LayoutReveal from "../ui/LayoutReveal";
+import BlinkVariants from "../ui/BlinkVariants";
 
 export default function Hero() {
-  // ✨ Parpadeo suave (3 veces)
-  const blinkVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: [0, 1, 0.6, 1],
-      transition: {
-        duration: 4.5, 
-        repeat: 1,   
-        ease: "easeInOut",
-      },
-    },
-  };
-
+ 
   return (
     <section
       id="hero"
-      className="pt-20 text-base px-4 md:pt-24 lg:pt-28 md:px-8 lg:px-16 xl:px-24 2xl:px-36 max-w-screen-xl mx-auto text-slate-950 dark:text-slate-200 bg-slate-900/10 backdrop-blur-3xl p-4 rounded-b-lg dark:bg-slate-600/30 dark:backdrop-blur-sm
+      className="pt-20 text-base px-4 md:pt-24 lg:pt-28 md:px-8 lg:px-16 xl:px-24 2xl:px-36 max-w-screen-xl mx-auto text-slate-950 dark:text-slate-200  p-4 rounded-b-lg 
 "
     >
       <div className="flex flex-col md:flex-row items-center gap-8 md:gap-10">
@@ -26,15 +14,10 @@ export default function Hero() {
         {/* Títulos y descripción */}
         <div className="space-y-4 flex-1 xl:mx-auto">
           <LayoutReveal isHero>
-            <motion.h1
-              className="text-4xl font-bold md:text-5xl lg:text-6xl"
-              variants={blinkVariants}
-              initial="hidden"
-              animate="visible"
-            >
+            <h1 className="text-4xl font-bold md:text-5xl lg:text-6xl">
               Web <span className="text-indigo-600">eficiente</span>. <br />
               Diseño que <span className="text-indigo-600">conecta</span>.
-            </motion.h1>
+            </h1>
           </LayoutReveal>
 
           <LayoutReveal isHero>
@@ -61,10 +44,15 @@ export default function Hero() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent rounded-lg"></div>
             <div className="absolute inset-0 z-10 pb-24 flex flex-col justify-end items-center text-white">
-              <span className="text-2xl font-bold md:text-3xl lg:text-4xl">
-                Maykell Ramos
-              </span>
-              <p className="md:text-xl lg:text-2xl">Full-Stack Junior</p>
+              <BlinkVariants>
+                <span className="text-2xl font-bold md:text-3xl lg:text-4xl">
+                Maykell Ramos            
+                </span>
+                <p className="md:text-xl lg:text-2xl">
+                Full-Stack Junior
+              </p>
+                </BlinkVariants>
+
             </div>
           </div>
         </LayoutReveal>
