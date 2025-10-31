@@ -34,7 +34,24 @@ export default function Contact() {
                     
                    {/* Redes sociales */}
                     <LayoutReveal isHero>
-                      <div className="flex flex-col lg:text-lg md:flex-row px-4 gap-4 md:gap-10 font-extralight text-slate-600 dark:text-slate-200">
+                      <div className="flex flex-col lg:text-lg md:flex-row px-4 gap-4 md:gap-10 text-slate-600 dark:text-slate-200">
+
+                         {/* Email */}
+                        <a
+                          onClick={() => (window.location.href = "mailto:mkpako2009@hotmail.com")}
+                          name="Email"
+                          target="_blank"
+                          rel="noreferrer noopener"
+                          aria-label="Enviar email a mkpako2009@hotmail.com"
+                          className="group flex items-center gap-3 transition cursor-pointer"
+                        >
+                          <div className="flex items-center justify-center w-12 h-12 rounded-ee-2xl bg-black dark:border-indigo-300 border group-hover:bg-slate-500/70 transition">
+                            <MailIcon className="w-6 h-6 text-white" />
+                          </div>
+                          <span className="flex items-center h-12 group-hover:text-slate-500 transition">
+                            Email
+                          </span>
+                        </a>
                         
                         {/* Linkedin */}
                         <a
@@ -44,10 +61,10 @@ export default function Contact() {
                           aria-label="Perfil de Linkedin de Maykell Da Costa Ramos"
                           className="group flex items-center gap-3 transition"
                         >
-                          <div className="flex items-center justify-center w-12 h-12 rounded-full bg-black dark:bg-indigo-700 group-hover:bg-indigo-700/70 transition">
-                            <LinkedinIcon className="w-5 h-5 text-white" />
+                          <div className="flex items-center justify-center w-12 h-12 rounded-ee-2xl bg-black dark:border-indigo-300 border group-hover:bg-slate-500/70 transition">
+                            <LinkedinIcon className="w-6 h-6 text-white" />
                           </div>
-                          <span className="flex items-center h-12 group-hover:text-indigo-400 transition translate-y-1">
+                          <span className="flex items-center h-12 group-hover:text-slate-500 transition translate-y-1">
                             Linkedin
                           </span>
                         </a>
@@ -60,30 +77,15 @@ export default function Contact() {
                           aria-label="Perfil de Github de Maykell Da Costa Ramos"
                           className="group flex items-center gap-3 transition"
                         >
-                          <div className="flex items-center justify-center w-12 h-12 rounded-full bg-black dark:bg-indigo-700 group-hover:bg-indigo-700/70 transition">
-                            <GithubIcon className="w-6 h-6 text-white" aria-hidden="true" />
+                          <div className="flex items-center justify-center w-12 h-12 rounded-ee-2xl bg-black dark:border-indigo-300 border group-hover:bg-slate-500/70 transition">
+                            <GithubIcon className="w-7 h-7 text-white" aria-hidden="true" />
                           </div>
-                          <span className="flex items-center h-12 group-hover:text-indigo-400 transition translate-y-1">
+                          <span className="flex items-center h-12 group-hover:text-slate-500 transition translate-y-1">
                             Github
                           </span>
                         </a>
 
-                        {/* Email */}
-                        <a
-                          onClick={() => (window.location.href = "mailto:mkpako2009@hotmail.com")}
-                          name="Email"
-                          target="_blank"
-                          rel="noreferrer noopener"
-                          aria-label="Enviar email a mkpako2009@hotmail.com"
-                          className="group flex items-center gap-3 transition cursor-pointer"
-                        >
-                          <div className="flex items-center justify-center w-12 h-12 rounded-full bg-black dark:bg-indigo-700 group-hover:bg-indigo-700/70 transition">
-                            <MailIcon className="w-5 h-5 text-white" />
-                          </div>
-                          <span className="flex items-center h-12 group-hover:text-indigo-400 transition">
-                            Email
-                          </span>
-                        </a>
+                       
                       </div>
                     </LayoutReveal>
 

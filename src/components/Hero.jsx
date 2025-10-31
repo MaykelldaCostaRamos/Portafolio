@@ -52,7 +52,7 @@ export default function Hero() {
         </div>
 
         {/* Imagen */}
-        <LayoutReveal isHero className="delay-400 md:w-64 lg:w-80 lg:mx-auto xl:w-96 ">
+        <LayoutReveal isHero className="delay-400 md:w-64 lg:w-80 lg:mx-auto xl:w-96">
           <div className="relative w-full">
             <img
               className="w-full h-auto rounded-lg"
