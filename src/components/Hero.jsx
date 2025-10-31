@@ -10,8 +10,8 @@ export default function Hero() {
 "
     >
       <div className="flex flex-col md:flex-row items-center gap-8 md:gap-10">
-        
-        {/* Títulos y descripción */}
+
+         {/* Títulos y descripción */}
         <div className="space-y-6 flex-1 xl:mx-autot">
           {/* Título */}
           <h1 className="text-4xl font-bold md:text-5xl lg:text-6xl">
@@ -52,22 +52,27 @@ export default function Hero() {
               alt="Maykell Ramos"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent rounded-lg"></div>
-            <div className="absolute inset-20 flex flex-col justify-end p-2 text-white">
+            <div className="absolute inset-0 flex flex-col justify-end p-2 text-white">
               <BlinkVariants>
                   <LayoutReveal isHero>
-                <span className="text-2xl font-bold md:text-3xl lg:text-6xl">
+                <span className="text-6xl md:text-5xl lg:text-6xl xl:text-7xl font-bold">
                   Maykell Ramos            
                 </span>
                   </LayoutReveal>
-                <p className="md:text-xl lg:text-2xl">
+                <p className="text-xl">
                   <LayoutReveal isHero>
-                    Full-Stack Junior
+                    Full-Stack 
                   </LayoutReveal>
                 </p>
               </BlinkVariants>
             </div>
           </div>
         </LayoutReveal>
+        
+       
+
+
+        
       </div>
     </section>
   );
