@@ -51,7 +51,7 @@ export default function Hero() {
               src="/profile.webp"
               alt="Maykell Ramos"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent rounded-lg"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent rounded-2xl"></div>
             <div className="absolute inset-0 flex flex-col justify-end p-2 text-white">
               <BlinkVariants>
                   <LayoutReveal isHero>

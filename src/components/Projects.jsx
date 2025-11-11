@@ -1,9 +1,11 @@
 import rc001 from "../assets/projects/rock-clicker/rc001.png";
+import nt001 from "../assets/projects/nouteam/nt001.png";
 import RocketIcon from "../assets/svg/rocket-ship.svg?react";
 import GithubIcon from "../assets/svg/github.svg?react";
 import ReactIcon from "../assets/svg/react.svg?react";
 import TailwindcssIcon from "../assets/svg/tailwindcss.svg?react";
 import FirebaseIcon from "../assets/svg/firebase.svg?react";
+import MongoDBIcon from "../assets/svg/mongodb.svg?react";
 import JSIcon from "../assets/svg/js.svg?react";
 import LayoutReveal from "../ui/LayoutReveal";
 import AnimatedLine from "../ui/AnimatedLine";
@@ -25,20 +27,23 @@ export default function Projects() {
           </h2>
                                         
 
-          {/* Proyecto */}
+          {/* Proyecto Rock Clicker */}
+
             <LayoutReveal>
             <div className="pt-8 flex justify-center">
               <div className="w-full max-w-[900px] p-6 rounded-2xl bg-black text-slate-200 shadow-xl border border-slate-200 transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl flex flex-col md:flex-row gap-6">
           
                 {/* Imagen */}
-                <img
-                  src={rc001}
-                  alt="Rock Clicker preview"
-                  className="rounded-xl shadow-md shadow-indigo-900/30 hover:scale-[1.02] hover:shadow-xl transition-transform duration-300 w-full md:w-2/5 h-auto md:h-[300px] lg:h-[350px] object-cover"
-                />
+                <div className="w-full md:w-2/4 aspect-[16/9] overflow-hidden rounded-xl">
+                  <img
+                    src={rc001}
+                    alt="Rock Clicker preview"
+                    className="w-full h-full object-cover hover:scale-[1.02] transition-transform duration-300"
+                  />
+                </div>
 
 
-                {/* Contenido */}
+                {/* Contenido 1 */}
                 <div className="flex flex-col justify-between md:w-1/2">
                   <div>
                     <h3 className="text-lg md:text-3xl font-bold">
@@ -84,6 +89,71 @@ export default function Projects() {
               </div>
             </div>
           </LayoutReveal>
+
+
+          {/* Proyecto Nouteam */}
+          <LayoutReveal>
+            <div className="pt-8 flex justify-center">
+              <div className="w-full max-w-[900px] p-6 rounded-2xl bg-black text-slate-200 shadow-xl border border-slate-200 transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl flex flex-col md:flex-row gap-6">
+          
+                {/* Imagen */}
+                <div className="w-full md:w-2/4 aspect-[16/9] overflow-hidden rounded-xl">
+                  <img
+                    src={nt001}
+                    alt="Nouteam preview"
+                    className="w-full h-full object-cover hover:scale-[1.02] transition-transform duration-300"
+                  />
+                </div>
+
+
+
+                {/* Contenido 1 */}
+                <div className="flex flex-col justify-between md:w-1/2">
+                  <div>
+                    <h3 className="text-lg md:text-3xl font-bold">
+                      Nouteam
+                    </h3>
+
+                    <div className="pt-4 flex gap-4 md:gap-6">
+                      <ReactIcon className="w-5 md:w-6 h-5 md:h-6 inline-block"/>
+                      <MongoDBIcon className="w-5 md:w-6 h-5 md:h-6 inline-block"/>
+                      <TailwindcssIcon className="w-5 md:w-6 h-5 md:h-6 inline-block"/>
+                      <JSIcon className="w-5 md:w-6 h-5 md:h-6 inline-block"/>
+                    </div>
+
+                    <p className="md:text-xl text-indigo-50 mt-3 leading-relaxed">
+                      Gestor de Tareas colaborativo, desarrollado siguiendo un roadmap de 21 días, que permite crear proyectos, 
+                      gestionar tareas y trabajar en equipo de manera eficiente.
+                    </p>
+                  </div>
+
+                  {/* Botones */}
+                  <div className="w-full flex flex-col sm:flex-row items-center sm:items-start justify-center gap-4 mt-7">
+                    <a
+                      href="https://nouteam.vercel.app/"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      className="w-full sm:w-auto flex items-center justify-center gap-3 px-6 py-3 text-white bg-indigo-600 hover:bg-indigo-700 rounded-xl font-semibold text-center shadow-md transition transform hover:-translate-y-1"
+                    > 
+                      <RocketIcon className="w-5 md:w-6 h-5 md:h-6 inline-block"/>
+                      Visitar página
+                    </a>
+
+                    <a
+                      href="https://github.com/MaykelldaCostaRamos/Gestor-de-tareas"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      className="w-full sm:w-auto flex items-center justify-center gap-3 px-6 py-3 border-2 border-indigo-50 text-indigo-50 hover:bg-indigo-200/20 hover:backdrop-blur-sm  rounded-xl font-semibold text-center transition transform hover:-translate-y-1"
+                    >
+                      <GithubIcon className="w-5 md:w-6 h-5 md:h-6 inline-block"/>
+                      Ver en GitHub
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </LayoutReveal>
+
         </div>                   
       </LayoutReveal>
 
