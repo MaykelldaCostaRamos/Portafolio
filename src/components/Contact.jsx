@@ -9,7 +9,7 @@ export default function Contact() {
 
     
 
-      <section id="contact" className="pt-12 text-base px-4 md:px-8 lg:px-16 xl:px-24 2xl:px-36 max-w-screen-xl mx-auto text-slate-950 dark:text-slate-200">
+      <section id="contact" className="pt-8 text-base px-4 md:px-8 lg:px-16 xl:px-24 2xl:px-36 max-w-screen-xl mx-auto text-slate-950 dark:text-slate-200">
         
         <LayoutReveal>
 
