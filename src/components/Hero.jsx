@@ -11,36 +11,7 @@ export default function Hero() {
     >
       <div className="flex flex-col md:flex-row items-center gap-8 md:gap-10">
 
-         {/* Títulos y descripción */}
-        <div className="space-y-6 flex-1 xl:mx-autot">
-          {/* Título */}
-          <h1 className="text-4xl font-bold md:text-5xl lg:text-6xl">
-            <LayoutReveal isHero  >
-              Web <span className="text-indigo-600">eficiente</span>.
-            </LayoutReveal>{" "}
-            <LayoutReveal isHero >
-              Diseño que <span className="text-indigo-600">conecta</span>.
-            </LayoutReveal>
-          </h1>
-
-          {/* Párrafo */}
-          <p className="text-slate-700/80 dark:text-slate-400 text-lg md:text-2xl lg:text-2xl xl:text-4xl font-light">
-            <LayoutReveal isHero  >
-              Creo experiencias digitales{" "}
-              <span className="font-semibold text-indigo-600">únicas</span>,{" "}
-            </LayoutReveal>
-            <LayoutReveal isHero >
-              <span className="font-semibold text-indigo-600">intuitivas</span> y{" "}
-              <span className="font-semibold text-indigo-600">personalizadas</span>,
-            </LayoutReveal>
-            <LayoutReveal isHero >
-              pensadas para cautivar a tus
-            </LayoutReveal>
-            <LayoutReveal isHero >
-              usuarios y reflejar tu identidad.
-            </LayoutReveal>
-          </p>
-        </div>
+         
 
 
         {/* Imagen */}
@@ -70,7 +41,36 @@ export default function Hero() {
         </LayoutReveal>
         
        
+{/* Títulos y descripción */}
+        <div className="space-y-6 flex-1 xl:mx-autot">
+          {/* Título */}
+          <h1 className="text-4xl font-bold md:text-5xl lg:text-6xl">
+            <LayoutReveal isHero  >
+              Web <span className="text-indigo-600">eficiente</span>.
+            </LayoutReveal>{" "}
+            <LayoutReveal isHero >
+              Diseño que <span className="text-indigo-600">conecta</span>.
+            </LayoutReveal>
+          </h1>
 
+          {/* Párrafo */}
+          <p className="text-slate-700/80 dark:text-slate-400 text-lg md:text-2xl lg:text-2xl xl:text-4xl font-light">
+            <LayoutReveal isHero  >
+              Creo experiencias digitales{" "}
+              <span className="font-semibold text-indigo-600">únicas</span>,{" "}
+            </LayoutReveal>
+            <LayoutReveal isHero >
+              <span className="font-semibold text-indigo-600">intuitivas</span> y{" "}
+              <span className="font-semibold text-indigo-600">personalizadas</span>,
+            </LayoutReveal>
+            <LayoutReveal isHero >
+              pensadas para cautivar a tus
+            </LayoutReveal>
+            <LayoutReveal isHero >
+              usuarios y reflejar tu identidad.
+            </LayoutReveal>
+          </p>
+        </div>
 
         
       </div>
