@@ -25,7 +25,7 @@ export default function LayoutReveal({
         animate={isHero ? "visible" : undefined}
         whileInView={isHero ? undefined : "visible"}
         variants={variants}
-        viewport={isHero ? undefined : { once: false, amount: 0.3 }}
+        viewport={isHero ? undefined : { once: true, amount: 0.3 }}
         className={`${className} will-change-transform will-change-opacity`}
       >
         {children}
