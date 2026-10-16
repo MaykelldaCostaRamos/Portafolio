@@ -5,6 +5,7 @@ import About from "./components/About";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import ThemeProvider from "./context/ThemeProvider";
+import { Analytics } from "@vercel/analytics/react";
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
      <About />
      <Projects />
      <Contact />
+     <Analytics />
     </ThemeProvider>
   )
 }
